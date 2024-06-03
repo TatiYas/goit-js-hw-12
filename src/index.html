@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Goit-js-hw-12</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <form class="form">
+      <input type="text" class="search-input" placeholder="Search images..." />
+      <button type="submit" class="search-button">Search</button>
+    </form>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <ul class="gallery"></ul>
+    <button type="button" class="load-more-btn">Load more</button>
+    <div class="loader"></div>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <script src="https://pixabay.com/api/docs/"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
