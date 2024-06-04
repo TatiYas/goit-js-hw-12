@@ -10,6 +10,8 @@ const inputElement = document.querySelector('.search-input');
 const loader = document.querySelector('.loader');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 
+hideLoader();
+
 let searchTerm = '';
 let pageCounter = 1;
 const perPage = 15;
